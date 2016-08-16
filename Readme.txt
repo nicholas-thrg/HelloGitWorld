@@ -5,14 +5,14 @@ git init
 [ STATUS ] Check for any changes to repository: 
 git status
 git status -s (abbreviated output)
-[ ADD ] "Untracked files" or modified files can be registered to the Git repository (staging): 
-git add <filename>
+[ ADD ] "Untracked files" or modified files can be registered to the Git repository (added to staging): 
+git add <filename> OR git add --all (for all files)
 git add -A . (dot stands for current dir, -A ensures file deletions included)
 git add '*.txt'
 Remove file(s) from Git staging area: 
 git reset <filename>
 [ COMMIT ] Capture snapshot of changes to files in staging: 
-git commit -m ""
+git commit -m "" (-m flag = message)
 git commit -am (-a flagged used for files that are still unstaged, skipping the git add step)
 Review changes made to commit
 git log
