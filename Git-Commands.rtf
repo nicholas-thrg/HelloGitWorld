@@ -1,0 +1,250 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 LucidaGrande;\f2\fnil\fcharset0 HelveticaNeue;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid102\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid103\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww13680\viewh16240\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Git Commands\
+Untracked(local) -> Commit (local) -> Staged(local)-> Push (Master)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Initialize a local folder (master) to be a Git repository:\'a0\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git init\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ STATUS ] Check for any changes to local (master) repository:\'a0\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git status\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git status -s (abbreviated output)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ ADD ] "Untracked files" or modified files can be registered to the Git repository (staging):\'a0\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git add <filename> OR git add --all (for all files)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git add -A . (dot stands for current dir, -A ensures file deletions included)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git add '*.txt'\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ RESET ] Remove file(s) from Git staging area:\'a0\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git reset <filename>\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git reset --soft HEAD^ (moves commit back one commit level, places changes in staging)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git reset --hard HEAD^ (undo last commit and discards all changes)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git reset --hard HEAD^^ (undo last two commits and discards all changes)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+NOTE: Do not perform the previous three commands after a PUSH has already been made\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ COMMIT ] Capture snapshot of changes to files in staging:\'a0\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git commit -m "" \'a0(-m <description of changes>)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git commit -am (-a flagged used for files that are still unstaged, skipping the git add step)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git commit --amend -m "commit description" (Adds commit information to existing commit)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ LOG ] Review changes made to commit\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git log\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ PULL ] Get most recent changes from repository (origin) to local (master):\'a0\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git pull origin master\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ REMOTE ] Adding a remote reposition to push files for sharing with team\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git remote add origin http://<git address> (origin is the name of the remote repository)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git remote -v (provides a list of all remote repositories)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+git remote rm <name> (removes the remote repository path)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0
+\f2 \cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ PUSH ] Upload changes to repository (origin):\'a0\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\sl320
+\ls2\ilvl2\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9642 
+\f2 	}\expnd0\expndtw0\kerning0
+git push -u origin master (-u option remembers the last name and branch for simplicity - git push)\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+Username/Pwds can be saved. See\'a0{\field{\*\fldinst{HYPERLINK "https://help.github.com/articles/caching-your-github-password-in-git/"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://help.github.com/articles/caching-your-github-password-in-git/}}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ DIFF ] See what is different from last commit\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git diff HEAD (HEAD - last commit on the current branch)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+See what's different between files in stage\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git diff --staged (--staged same as --cached)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+See what changes made in unstaged files\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git diff\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ CHECKOUT ] Revert changes back to last commit's state\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git checkout --<filename> \'a0(double dash informs command line there are no more options to follow after --)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ BRANCH ] Create a branch off of master\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git branch <branch_name>\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Switch to the branch\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git checkout <branch_name>\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git checkout -b <branch_name> (creates new branch and switches focus to this branch\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ RM ] Remove files from disk and stage the change\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git rm '*.txt'\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git commit -am "Remove files" \'a0(if files were deleted without git rm, this will commit and delete files)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Switch back to master\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git checkout master\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Merge branch back to master\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git merge <branch_name>\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Delete branch after merging is successful\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git branch -d <branch_name>\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Update changes to repository (origin)\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+git push\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+[ GITIGNORE ] Ignore certain files for Git\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl320
+\ls2\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+cat .gitignore\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+*.[oa] (any files ending in .a or .o)\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f1 \uc0\u9702 
+\f2 	}\expnd0\expndtw0\kerning0
+*~ (any files ending with a ~)\
+}
